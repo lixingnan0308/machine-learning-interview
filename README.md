@@ -575,18 +575,7 @@
      $$
   
 5. Huber 损失函数：结合了绝对损失函数和平方损失函数的优点；缺点是需要调整超参数  $\delta$ 
-     $$
-     L_{Huber}(f, y) =
-     \begin{cases}
-     (f-y)^2
-     &
-     |f-y| \leq \delta
-     \\
-     2 \delta |f-y| - \delta^2
-     &
-     |f-y| > \delta
-     \end{cases}
-     $$
+     $$L_{Huber}(f, y) =\begin{cases}(f-y)^2&|f-y| \leq \delta\\2 \delta |f-y| - \delta^2&|f-y| > \delta\end{cases}$$
   
 6. Log-Cosh 损失函数：具有Huber的所有优点，同时二阶处处可微（牛顿法要求二阶可微）
      $$
